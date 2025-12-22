@@ -1,0 +1,118 @@
+a {
+            color: gray;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+            -webkit-text-decoration-skip: ink;
+        }
+        .b{
+            font-weight: 500;
+        }
+
+        .b-medium{
+            font-weight: 400;
+        } 
+
+        .b-light{
+            font-weight: 200;
+        } 
+
+        .text-brand{
+          color: #0bb7af;
+          font-weight: 200 !important;
+        }
+
+        .bg-brand{
+          background-color: #0bb7af;
+          color:white;
+          border:none;
+        }        
+
+        a:hover {
+            color: #1a1630;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+            -webkit-text-decoration-skip: ink;
+
+        }
+
+        body {
+            color: gray;
+            font-family: 'Rubik', sans-serif;
+            background-color: #f0f0f1;
+        }
+
+        .back{
+          box-shadow: none !important;
+            border: none;
+            background-color: white;
+            border-bottom: solid thin #0bb7af;
+        }
+
+      .add-room i{
+          color: #0bb7af;
+          font-size: 4.5em;
+          position: fixed;
+          bottom:50px;
+          right: 15px; 
+          z-index: 999; 
+      }
+
+      /* Sidebar base */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  z-index: 1040;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar links */
+.sidebar-link {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  border-radius: 6px;
+}
+
+.sidebar-link:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+}
+
+/* Push main content */
+.main-content {
+  margin-left: 240px;
+  padding-top: 80px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1030;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+}

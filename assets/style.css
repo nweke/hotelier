@@ -9,6 +9,12 @@ body {
     margin: 0;
 }
 
+button{
+    background-color: #0bb7af;
+    color: white;
+    border: none;
+}
+
 /* Links */
 a {
     color: gray;
@@ -20,6 +26,10 @@ a:hover {
     color: #1a1630;
     text-decoration: none;
     background-color: transparent;
+}
+
+table tbody{
+    color: gray;
 }
 
 /* Font weights */

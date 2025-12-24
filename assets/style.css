@@ -38,6 +38,10 @@ table tbody{
 .b-light { font-weight: 200; }
 .text-brand { color: #0bb7af; font-weight: 200 !important; }
 
+.text-brand{
+    color: #0bb7af;
+}
+
 /* Buttons and brand */
 .bg-brand {
     background-color: #0bb7af;
